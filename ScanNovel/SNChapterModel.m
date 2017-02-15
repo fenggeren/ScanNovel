@@ -10,4 +10,14 @@
 
 @implementation SNChapterModel
 
+- (BOOL)isEqual:(SNChapterModel *)object
+{
+    return [self.URL isEqualToString:object.URL];
+}
+
+- (NSUInteger)hash
+{
+    return [self.URL hash];
+}
+
 @end

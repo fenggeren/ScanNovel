@@ -17,6 +17,23 @@
 		285341111E532EAA005128C7 /* SNNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341101E532EAA005128C7 /* SNNetwork.m */; };
 		285341141E532ECB005128C7 /* SNNovelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341131E532ECB005128C7 /* SNNovelModel.m */; };
 		285341171E53317C005128C7 /* SNChapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341161E53317C005128C7 /* SNChapterModel.m */; };
+		285341191E548297005128C7 /* Sites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 285341181E548297005128C7 /* Sites.plist */; };
+		2853411C1E548659005128C7 /* SNSitesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853411B1E548659005128C7 /* SNSitesManager.m */; };
+		285341201E5489F6005128C7 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2853411F1E5489F6005128C7 /* libxml2.2.tbd */; };
+		285341251E548A12005128C7 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341241E548A12005128C7 /* GDataXMLNode.m */; };
+		285341281E548CEC005128C7 /* SNSite_DH.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341271E548CEC005128C7 /* SNSite_DH.m */; };
+		285341321E5490A5005128C7 /* NSTimer+FGRBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853412B1E5490A5005128C7 /* NSTimer+FGRBlock.m */; };
+		285341331E5490A5005128C7 /* NSString+FGRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853412D1E5490A5005128C7 /* NSString+FGRExtension.m */; };
+		285341341E5490A5005128C7 /* UIImage+FGRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853412F1E5490A5005128C7 /* UIImage+FGRExtension.m */; };
+		285341351E5490A5005128C7 /* UIColor+FGRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341311E5490A5005128C7 /* UIColor+FGRExtension.m */; };
+		2853413F1E549915005128C7 /* SNSite_520.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341371E549915005128C7 /* SNSite_520.m */; };
+		285341401E549915005128C7 /* SNSite_SHH.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341381E549915005128C7 /* SNSite_SHH.m */; };
+		285341411E549915005128C7 /* SNSite_LW.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341391E549915005128C7 /* SNSite_LW.m */; };
+		285341421E549915005128C7 /* SNSite_MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853413A1E549915005128C7 /* SNSite_MP.m */; };
+		285341431E549915005128C7 /* SNSite_LDW.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853413B1E549915005128C7 /* SNSite_LDW.m */; };
+		285341441E549915005128C7 /* SNSite_QK.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853413C1E549915005128C7 /* SNSite_QK.m */; };
+		285341451E549915005128C7 /* SNSite_HH.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853413D1E549915005128C7 /* SNSite_HH.m */; };
+		285341461E549915005128C7 /* SNSite_SN.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853413E1E549915005128C7 /* SNSite_SN.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +55,29 @@
 		285341131E532ECB005128C7 /* SNNovelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNNovelModel.m; sourceTree = "<group>"; };
 		285341151E53317C005128C7 /* SNChapterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNChapterModel.h; sourceTree = "<group>"; };
 		285341161E53317C005128C7 /* SNChapterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNChapterModel.m; sourceTree = "<group>"; };
+		285341181E548297005128C7 /* Sites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Sites.plist; sourceTree = "<group>"; };
+		2853411A1E548659005128C7 /* SNSitesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSitesManager.h; sourceTree = "<group>"; };
+		2853411B1E548659005128C7 /* SNSitesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSitesManager.m; sourceTree = "<group>"; };
+		2853411F1E5489F6005128C7 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		285341231E548A12005128C7 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		285341241E548A12005128C7 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		285341271E548CEC005128C7 /* SNSite_DH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_DH.m; sourceTree = "<group>"; };
+		2853412A1E5490A5005128C7 /* NSTimer+FGRBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+FGRBlock.h"; sourceTree = "<group>"; };
+		2853412B1E5490A5005128C7 /* NSTimer+FGRBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+FGRBlock.m"; sourceTree = "<group>"; };
+		2853412C1E5490A5005128C7 /* NSString+FGRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FGRExtension.h"; sourceTree = "<group>"; };
+		2853412D1E5490A5005128C7 /* NSString+FGRExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FGRExtension.m"; sourceTree = "<group>"; };
+		2853412E1E5490A5005128C7 /* UIImage+FGRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FGRExtension.h"; sourceTree = "<group>"; };
+		2853412F1E5490A5005128C7 /* UIImage+FGRExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FGRExtension.m"; sourceTree = "<group>"; };
+		285341301E5490A5005128C7 /* UIColor+FGRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FGRExtension.h"; sourceTree = "<group>"; };
+		285341311E5490A5005128C7 /* UIColor+FGRExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FGRExtension.m"; sourceTree = "<group>"; };
+		285341371E549915005128C7 /* SNSite_520.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_520.m; sourceTree = "<group>"; };
+		285341381E549915005128C7 /* SNSite_SHH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_SHH.m; sourceTree = "<group>"; };
+		285341391E549915005128C7 /* SNSite_LW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_LW.m; sourceTree = "<group>"; };
+		2853413A1E549915005128C7 /* SNSite_MP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_MP.m; sourceTree = "<group>"; };
+		2853413B1E549915005128C7 /* SNSite_LDW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_LDW.m; sourceTree = "<group>"; };
+		2853413C1E549915005128C7 /* SNSite_QK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_QK.m; sourceTree = "<group>"; };
+		2853413D1E549915005128C7 /* SNSite_HH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_HH.m; sourceTree = "<group>"; };
+		2853413E1E549915005128C7 /* SNSite_SN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_SN.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285341201E5489F6005128C7 /* libxml2.2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +97,7 @@
 			children = (
 				285340F11E4DE92C005128C7 /* ScanNovel */,
 				285340F01E4DE92C005128C7 /* Products */,
+				2853411E1E5489F5005128C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +112,7 @@
 		285340F11E4DE92C005128C7 /* ScanNovel */ = {
 			isa = PBXGroup;
 			children = (
+				285341211E5489FF005128C7 /* Other */,
 				2853410A1E4DE957005128C7 /* Class */,
 				285340F51E4DE92C005128C7 /* AppDelegate.h */,
 				285340F61E4DE92C005128C7 /* AppDelegate.m */,
@@ -95,10 +138,14 @@
 		285341091E4DE94F005128C7 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
+				285341261E548CC2005128C7 /* crowed */,
+				2853411A1E548659005128C7 /* SNSitesManager.h */,
+				2853411B1E548659005128C7 /* SNSitesManager.m */,
 				2853410B1E4DE96E005128C7 /* SNParse.h */,
 				2853410C1E4DE96E005128C7 /* SNParse.m */,
 				2853410F1E532EAA005128C7 /* SNNetwork.h */,
 				285341101E532EAA005128C7 /* SNNetwork.m */,
+				285341181E548297005128C7 /* Sites.plist */,
 			);
 			name = Parse;
 			sourceTree = "<group>";
@@ -106,6 +153,7 @@
 		2853410A1E4DE957005128C7 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				2853411D1E548660005128C7 /* Util */,
 				2853410E1E532E93005128C7 /* Model */,
 				285341091E4DE94F005128C7 /* Parse */,
 			);
@@ -121,6 +169,70 @@
 				285341161E53317C005128C7 /* SNChapterModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		2853411D1E548660005128C7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		2853411E1E5489F5005128C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2853411F1E5489F6005128C7 /* libxml2.2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		285341211E5489FF005128C7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				285341291E54909B005128C7 /* Category */,
+				285341221E548A06005128C7 /* GDataXML */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		285341221E548A06005128C7 /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				285341231E548A12005128C7 /* GDataXMLNode.h */,
+				285341241E548A12005128C7 /* GDataXMLNode.m */,
+			);
+			name = GDataXML;
+			sourceTree = "<group>";
+		};
+		285341261E548CC2005128C7 /* crowed */ = {
+			isa = PBXGroup;
+			children = (
+				285341371E549915005128C7 /* SNSite_520.m */,
+				285341381E549915005128C7 /* SNSite_SHH.m */,
+				285341391E549915005128C7 /* SNSite_LW.m */,
+				2853413A1E549915005128C7 /* SNSite_MP.m */,
+				2853413B1E549915005128C7 /* SNSite_LDW.m */,
+				2853413C1E549915005128C7 /* SNSite_QK.m */,
+				2853413D1E549915005128C7 /* SNSite_HH.m */,
+				2853413E1E549915005128C7 /* SNSite_SN.m */,
+				285341271E548CEC005128C7 /* SNSite_DH.m */,
+			);
+			name = crowed;
+			sourceTree = "<group>";
+		};
+		285341291E54909B005128C7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2853412A1E5490A5005128C7 /* NSTimer+FGRBlock.h */,
+				2853412B1E5490A5005128C7 /* NSTimer+FGRBlock.m */,
+				2853412C1E5490A5005128C7 /* NSString+FGRExtension.h */,
+				2853412D1E5490A5005128C7 /* NSString+FGRExtension.m */,
+				2853412E1E5490A5005128C7 /* UIImage+FGRExtension.h */,
+				2853412F1E5490A5005128C7 /* UIImage+FGRExtension.m */,
+				285341301E5490A5005128C7 /* UIColor+FGRExtension.h */,
+				285341311E5490A5005128C7 /* UIColor+FGRExtension.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				285341021E4DE92C005128C7 /* LaunchScreen.storyboard in Resources */,
+				285341191E548297005128C7 /* Sites.plist in Resources */,
 				285340FF1E4DE92C005128C7 /* Assets.xcassets in Resources */,
 				285340FD1E4DE92C005128C7 /* Main.storyboard in Resources */,
 			);
@@ -196,12 +309,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				2853410D1E4DE96E005128C7 /* SNParse.m in Sources */,
+				285341331E5490A5005128C7 /* NSString+FGRExtension.m in Sources */,
+				285341451E549915005128C7 /* SNSite_HH.m in Sources */,
 				285341171E53317C005128C7 /* SNChapterModel.m in Sources */,
 				285341141E532ECB005128C7 /* SNNovelModel.m in Sources */,
 				285340FA1E4DE92C005128C7 /* ViewController.m in Sources */,
+				2853413F1E549915005128C7 /* SNSite_520.m in Sources */,
 				285340F71E4DE92C005128C7 /* AppDelegate.m in Sources */,
+				285341411E549915005128C7 /* SNSite_LW.m in Sources */,
+				285341461E549915005128C7 /* SNSite_SN.m in Sources */,
+				285341321E5490A5005128C7 /* NSTimer+FGRBlock.m in Sources */,
+				285341251E548A12005128C7 /* GDataXMLNode.m in Sources */,
 				285340F41E4DE92C005128C7 /* main.m in Sources */,
+				285341421E549915005128C7 /* SNSite_MP.m in Sources */,
+				285341341E5490A5005128C7 /* UIImage+FGRExtension.m in Sources */,
+				285341431E549915005128C7 /* SNSite_LDW.m in Sources */,
+				285341401E549915005128C7 /* SNSite_SHH.m in Sources */,
+				285341441E549915005128C7 /* SNSite_QK.m in Sources */,
 				285341111E532EAA005128C7 /* SNNetwork.m in Sources */,
+				285341281E548CEC005128C7 /* SNSite_DH.m in Sources */,
+				2853411C1E548659005128C7 /* SNSitesManager.m in Sources */,
+				285341351E5490A5005128C7 /* UIColor+FGRExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,8 +450,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JEPATNX4BL;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = ScanNovel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fgr.ScanNovel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -334,8 +465,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JEPATNX4BL;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = ScanNovel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fgr.ScanNovel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
