@@ -7,9 +7,15 @@
 //
 
 #import "SNSitesManager.h"
+#import "NSString+FGRExtension.h"
+
+#define kSiteURLGegex  @"/\\w.*\\w/"
+
 
 @implementation SNSiteModel
-
+{
+    NSString *_URLSite;
+}
 
 + (SNSiteModel *)siteWith:(NSDictionary *)dict
 {
@@ -23,6 +29,19 @@
     site.URL = URL;
     site.parseClass = [NSString stringWithFormat:@"SNParse_%@", parseClass];
     return site;
+}
+
+- (NSString *)URLSite
+{
+    if (!_URLSite) {
+        _URLSite = [_URL stringsByMatchedRegex:kSiteURLGegex].firstObject;
+    }
+    return _URLSite;
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"name: %@, \n URL: %@, \n parseClass: %@", _name, _URL, _parseClass];
 }
 
 @end
@@ -46,6 +65,21 @@
     });
     return siteModels;
 }
+
+
+
++ (id<SNParse>)parserWithURL:(NSString *)URL
+{
+//    URL = [URL stringsByMatchedRegex:kSiteURLGegex].firstObject;
+    for (SNSiteModel *site in [self.class sites]) {
+        if ([URL containsString:site.URL]) {
+            return [[NSClassFromString(site.parseClass) alloc] init];
+        }
+    }
+    return nil;
+}
+
+
 
 
 @end

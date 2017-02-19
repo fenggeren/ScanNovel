@@ -67,4 +67,20 @@
     return chinese;
 }
 
+- (NSArray<NSString *> *)stringsByMatchedRegex:(NSString *)regex
+{
+    NSRegularExpression *expression = [NSRegularExpression regularExpressionWithPattern:regex options:NSRegularExpressionCaseInsensitive error:NULL];
+    NSArray *matches = [expression matchesInString:self options:NSMatchingReportCompletion range:NSMakeRange(0, self.length)];
+
+    NSMutableArray *array = [NSMutableArray array];
+    for (NSTextCheckingResult *match in matches) {
+        for (NSInteger i = 0; i < match.numberOfRanges; ++i) {
+            NSString *component = [self substringWithRange:[match rangeAtIndex:i]];
+            [array addObject:component];
+        }
+    }
+    
+    return array;
+}
+
 @end

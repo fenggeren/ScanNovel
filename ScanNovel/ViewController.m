@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SNNetwork.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+ 
+    [[SNNetwork sharedInstance] downloadNovelInfoWith:@"http://www.biquge.com/43_43821/" complete:^(NSError *error, SNNovelModel *model) {
+        NSLog(@"%@---%@", error, model);
+    }];
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end

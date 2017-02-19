@@ -6,7 +6,7 @@
 		<key>name</key>
 		<string>笔趣阁</string>
 		<key>URL</key>
-		<string>http://www.biquge.com/</string>
+		<string>biquge.com/</string>
 		<key>class</key>
 		<string>BQG</string>
 	</dict>
@@ -14,7 +14,7 @@
 		<key>name</key>
 		<string>520</string>
 		<key>URL</key>
-		<string>http://www.520xs.la/</string>
+		<string>520xs.la/</string>
 		<key>class</key>
 		<string>520</string>
 	</dict>
@@ -22,7 +22,7 @@
 		<key>name</key>
 		<string>书哈哈</string>
 		<key>URL</key>
-		<string>http://www.79xs.com/Book/ShowBookOver.aspx</string>
+		<string>79xs.com/Book/ShowBookOver.aspx</string>
 		<key>class</key>
 		<string>SHH</string>
 	</dict>
@@ -30,7 +30,7 @@
 		<key>name</key>
 		<string>乐文</string>
 		<key>URL</key>
-		<string>http://www.lwxs520.com/</string>
+		<string>lwxs520.com/</string>
 		<key>class</key>
 		<string>LW</string>
 	</dict>
@@ -38,7 +38,7 @@
 		<key>name</key>
 		<string>猫扑中文</string>
 		<key>URL</key>
-		<string>http://mpzw.com/</string>
+		<string>mpzw.com/</string>
 		<key>class</key>
 		<string>MP</string>
 	</dict>
@@ -46,7 +46,7 @@
 		<key>name</key>
 		<string>乐读窝</string>
 		<key>URL</key>
-		<string>http://leduwo.com/</string>
+		<string>leduwo.com/</string>
 		<key>class</key>
 		<string>LDW</string>
 	</dict>
@@ -54,7 +54,7 @@
 		<key>name</key>
 		<string>混混</string>
 		<key>URL</key>
-		<string>http://www.hunhun520.com/</string>
+		<string>hunhun520.com/</string>
 		<key>class</key>
 		<string>HH</string>
 	</dict>
@@ -62,7 +62,7 @@
 		<key>name</key>
 		<string>少年文学</string>
 		<key>URL</key>
-		<string>http://www.snwx.com/</string>
+		<string>snwx.com/</string>
 		<key>class</key>
 		<string>SN</string>
 	</dict>
@@ -70,7 +70,7 @@
 		<key>name</key>
 		<string>大海中文</string>
 		<key>URL</key>
-		<string>http://www.dhzw.com/</string>
+		<string>dhzw.com/</string>
 		<key>class</key>
 		<string>DH</string>
 	</dict>
@@ -78,7 +78,7 @@
 		<key>name</key>
 		<string>请看</string>
 		<key>URL</key>
-		<string>http://www.qingkan520.com/</string>
+		<string>qingkan520.com/</string>
 		<key>class</key>
 		<string>QK</string>
 	</dict>

@@ -15,4 +15,7 @@
 - (NSString *)stringTrimHeaderTail;
 
 - (NSString* )alaboToChinese;
+
+
+- (NSArray<NSString *> *)stringsByMatchedRegex:(NSString *)regex;
 @end

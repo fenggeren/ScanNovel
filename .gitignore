@@ -8,3 +8,16 @@ ScanNovel.xcodeproj/project.xcworkspace/xcuserdata/abc.xcuserdatad/UserInterface
 ScanNovel.xcodeproj/xcuserdata/abc.xcuserdatad/xcschemes/ScanNovel.xcscheme
 
 ScanNovel.xcodeproj/xcuserdata/abc.xcuserdatad/xcschemes/xcschememanagement.plist
+
+*.xcodeproj/xcuserdata/*.xcuserdatad
+
+*.xccheckout
+*.xcuserdatad
+
+Pods
+
+DerivedData
+build
+
+*.lock
+

@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SNParseProtocol.h"
+
 
 @interface SNSiteModel : NSObject
 
@@ -21,5 +23,7 @@
 @interface SNSitesManager : NSObject
 
 + (NSArray *)sites;
+
++ (id<SNParse>)parserWithURL:(NSString *)URL;
 
 @end

@@ -34,9 +34,24 @@
 		285341441E549915005128C7 /* SNSite_QK.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853413C1E549915005128C7 /* SNSite_QK.m */; };
 		285341451E549915005128C7 /* SNSite_HH.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853413D1E549915005128C7 /* SNSite_HH.m */; };
 		285341461E549915005128C7 /* SNSite_SN.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853413E1E549915005128C7 /* SNSite_SN.m */; };
+		285341521E571D76005128C7 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341511E571D76005128C7 /* Test.m */; };
+		2853415B1E59DC9D005128C7 /* SNSite_BQG.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853415A1E59DC9D005128C7 /* SNSite_BQG.m */; };
+		690C2339CAB78C8ED83FC26F /* libPods-ScanNovel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FFD29D4AAF823771EC103 /* libPods-ScanNovel.a */; };
+		DDEF6FB9CFF04FD967FB0EFE /* libPods-Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D674ED670EDA27354B1289A7 /* libPods-Test.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		285341541E571D76005128C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 285340E71E4DE92C005128C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 285340EE1E4DE92C005128C7;
+			remoteInfo = ScanNovel;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		12FDA2DE785B851441DB039A /* Pods-ScanNovel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanNovel.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScanNovel/Pods-ScanNovel.release.xcconfig"; sourceTree = "<group>"; };
 		285340EF1E4DE92C005128C7 /* ScanNovel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanNovel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285340F31E4DE92C005128C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		285340F51E4DE92C005128C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +93,16 @@
 		2853413C1E549915005128C7 /* SNSite_QK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_QK.m; sourceTree = "<group>"; };
 		2853413D1E549915005128C7 /* SNSite_HH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_HH.m; sourceTree = "<group>"; };
 		2853413E1E549915005128C7 /* SNSite_SN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_SN.m; sourceTree = "<group>"; };
+		2853414F1E571D76005128C7 /* Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		285341511E571D76005128C7 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		285341531E571D76005128C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		285341591E59B833005128C7 /* SNParseProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNParseProtocol.h; sourceTree = "<group>"; };
+		2853415A1E59DC9D005128C7 /* SNSite_BQG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_BQG.m; sourceTree = "<group>"; };
+		521BC8A5CC70CDEC685C5D8A /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
+		B584702C2D56F2E323767E08 /* Pods-ScanNovel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanNovel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScanNovel/Pods-ScanNovel.debug.xcconfig"; sourceTree = "<group>"; };
+		C3E06376CBE0ACE5738F8999 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
+		D674ED670EDA27354B1289A7 /* libPods-Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79FFD29D4AAF823771EC103 /* libPods-ScanNovel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScanNovel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +111,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				285341201E5489F6005128C7 /* libxml2.2.tbd in Frameworks */,
+				690C2339CAB78C8ED83FC26F /* libPods-ScanNovel.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2853414C1E571D76005128C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDEF6FB9CFF04FD967FB0EFE /* libPods-Test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +130,10 @@
 			isa = PBXGroup;
 			children = (
 				285340F11E4DE92C005128C7 /* ScanNovel */,
+				285341501E571D76005128C7 /* Test */,
 				285340F01E4DE92C005128C7 /* Products */,
 				2853411E1E5489F5005128C7 /* Frameworks */,
+				91420BC62118844F92AADBD4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				285340EF1E4DE92C005128C7 /* ScanNovel.app */,
+				2853414F1E571D76005128C7 /* Test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +219,8 @@
 			isa = PBXGroup;
 			children = (
 				2853411F1E5489F6005128C7 /* libxml2.2.tbd */,
+				E79FFD29D4AAF823771EC103 /* libPods-ScanNovel.a */,
+				D674ED670EDA27354B1289A7 /* libPods-Test.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,8 +246,10 @@
 		285341261E548CC2005128C7 /* crowed */ = {
 			isa = PBXGroup;
 			children = (
-				285341371E549915005128C7 /* SNSite_520.m */,
+				285341591E59B833005128C7 /* SNParseProtocol.h */,
+				2853415A1E59DC9D005128C7 /* SNSite_BQG.m */,
 				285341381E549915005128C7 /* SNSite_SHH.m */,
+				285341371E549915005128C7 /* SNSite_520.m */,
 				285341391E549915005128C7 /* SNSite_LW.m */,
 				2853413A1E549915005128C7 /* SNSite_MP.m */,
 				2853413B1E549915005128C7 /* SNSite_LDW.m */,
@@ -235,6 +276,26 @@
 			name = Category;
 			sourceTree = "<group>";
 		};
+		285341501E571D76005128C7 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				285341511E571D76005128C7 /* Test.m */,
+				285341531E571D76005128C7 /* Info.plist */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		91420BC62118844F92AADBD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B584702C2D56F2E323767E08 /* Pods-ScanNovel.debug.xcconfig */,
+				12FDA2DE785B851441DB039A /* Pods-ScanNovel.release.xcconfig */,
+				521BC8A5CC70CDEC685C5D8A /* Pods-Test.debug.xcconfig */,
+				C3E06376CBE0ACE5738F8999 /* Pods-Test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,9 +303,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 285341061E4DE92C005128C7 /* Build configuration list for PBXNativeTarget "ScanNovel" */;
 			buildPhases = (
+				46458E336F374CA7201680FA /* 📦 Check Pods Manifest.lock */,
 				285340EB1E4DE92C005128C7 /* Sources */,
 				285340EC1E4DE92C005128C7 /* Frameworks */,
 				285340ED1E4DE92C005128C7 /* Resources */,
+				FB3EAA2414AFD8D2344C2169 /* 📦 Embed Pods Frameworks */,
+				6E38E5000AAC16B7A62841B4 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +318,27 @@
 			productName = ScanNovel;
 			productReference = 285340EF1E4DE92C005128C7 /* ScanNovel.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2853414E1E571D76005128C7 /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 285341561E571D76005128C7 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				F384544BBCC5A8805FC43249 /* 📦 Check Pods Manifest.lock */,
+				2853414B1E571D76005128C7 /* Sources */,
+				2853414C1E571D76005128C7 /* Frameworks */,
+				2853414D1E571D76005128C7 /* Resources */,
+				972B1ACCD121ED2113399D63 /* 📦 Embed Pods Frameworks */,
+				6949AB2224609F403C832F2C /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				285341551E571D76005128C7 /* PBXTargetDependency */,
+			);
+			name = Test;
+			productName = Test;
+			productReference = 2853414F1E571D76005128C7 /* Test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -268,6 +353,12 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = JEPATNX4BL;
 						ProvisioningStyle = Automatic;
+					};
+					2853414E1E571D76005128C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JEPATNX4BL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 285340EE1E4DE92C005128C7;
 					};
 				};
 			};
@@ -285,6 +376,7 @@
 			projectRoot = "";
 			targets = (
 				285340EE1E4DE92C005128C7 /* ScanNovel */,
+				2853414E1E571D76005128C7 /* Test */,
 			);
 		};
 /* End PBXProject section */
@@ -301,7 +393,107 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2853414D1E571D76005128C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46458E336F374CA7201680FA /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6949AB2224609F403C832F2C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test/Pods-Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E38E5000AAC16B7A62841B4 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScanNovel/Pods-ScanNovel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		972B1ACCD121ED2113399D63 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test/Pods-Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F384544BBCC5A8805FC43249 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB3EAA2414AFD8D2344C2169 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScanNovel/Pods-ScanNovel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		285340EB1E4DE92C005128C7 /* Sources */ = {
@@ -311,6 +503,7 @@
 				2853410D1E4DE96E005128C7 /* SNParse.m in Sources */,
 				285341331E5490A5005128C7 /* NSString+FGRExtension.m in Sources */,
 				285341451E549915005128C7 /* SNSite_HH.m in Sources */,
+				2853415B1E59DC9D005128C7 /* SNSite_BQG.m in Sources */,
 				285341171E53317C005128C7 /* SNChapterModel.m in Sources */,
 				285341141E532ECB005128C7 /* SNNovelModel.m in Sources */,
 				285340FA1E4DE92C005128C7 /* ViewController.m in Sources */,
@@ -333,7 +526,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2853414B1E571D76005128C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285341521E571D76005128C7 /* Test.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		285341551E571D76005128C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 285340EE1E4DE92C005128C7 /* ScanNovel */;
+			targetProxy = 285341541E571D76005128C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		285340FB1E4DE92C005128C7 /* Main.storyboard */ = {
@@ -395,9 +604,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -437,8 +649,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -447,6 +662,7 @@
 		};
 		285341071E4DE92C005128C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B584702C2D56F2E323767E08 /* Pods-ScanNovel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JEPATNX4BL;
@@ -454,7 +670,11 @@
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = ScanNovel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-lxml2";
+				LIBRARY_SEARCH_PATHS = "\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lxml2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fgr.ScanNovel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -462,6 +682,7 @@
 		};
 		285341081E4DE92C005128C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12FDA2DE785B851441DB039A /* Pods-ScanNovel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JEPATNX4BL;
@@ -469,9 +690,51 @@
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = ScanNovel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-lxml2";
+				LIBRARY_SEARCH_PATHS = "\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lxml2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fgr.ScanNovel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		285341571E571D76005128C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521BC8A5CC70CDEC685C5D8A /* Pods-Test.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JEPATNX4BL;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+				);
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fgr.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanNovel.app/ScanNovel";
+			};
+			name = Debug;
+		};
+		285341581E571D76005128C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3E06376CBE0ACE5738F8999 /* Pods-Test.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JEPATNX4BL;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+				);
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fgr.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanNovel.app/ScanNovel";
 			};
 			name = Release;
 		};
@@ -492,6 +755,15 @@
 			buildConfigurations = (
 				285341071E4DE92C005128C7 /* Debug */,
 				285341081E4DE92C005128C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		285341561E571D76005128C7 /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				285341571E571D76005128C7 /* Debug */,
+				285341581E571D76005128C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

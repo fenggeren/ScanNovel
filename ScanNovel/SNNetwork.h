@@ -26,7 +26,11 @@
 // 下载给定小说内容
 - (void)downloadNovelInfoWith:(NSString *)URL complete:(void(^)(NSError *, SNNovelModel *))complete;
 // 下载给定章节内容
-- (void)downloadChapterWith:(NSString *)URL complete:(void(^)(NSError *, SNChapterModel *))complete;
+- (void)downloadChapterWith:(NSString *)URL complete:(void(^)(NSError *, NSString *))complete;
+
+
+#pragma mark -  Test
+
 
 
 @end
