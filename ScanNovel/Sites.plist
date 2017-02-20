@@ -9,6 +9,8 @@
 		<string>biquge.com/</string>
 		<key>class</key>
 		<string>BQG</string>
+		<key>searchURL</key>
+		<string>http://zhannei.baidu.com/cse/search?q=%@&amp;click=1&amp;s=287293036948159515&amp;nsid=</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -17,6 +19,8 @@
 		<string>520xs.la/</string>
 		<key>class</key>
 		<string>520</string>
+		<key>searchURL</key>
+		<string>http://zhannei.baidu.com/cse/search?q=%@&amp;click=1&amp;entry=1&amp;s=3475345448027295004&amp;nsid=</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -25,6 +29,8 @@
 		<string>79xs.com/Book/ShowBookOver.aspx</string>
 		<key>class</key>
 		<string>SHH</string>
+		<key>searchURL</key>
+		<string>http://zhannei.baidu.com/cse/search?q=%@&amp;click=1&amp;s=287293036948159515&amp;nsid=</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -33,6 +39,8 @@
 		<string>lwxs520.com/</string>
 		<key>class</key>
 		<string>LW</string>
+		<key>searchURL</key>
+		<string>http://zhannei.baidu.com/cse/search?s=103623352827404213&amp;q=%@&amp;isNeedCheckDomain=1&amp;jump=1</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -41,6 +49,8 @@
 		<string>mpzw.com/</string>
 		<key>class</key>
 		<string>MP</string>
+		<key>searchURL</key>
+		<string>http://zhannei.baidu.com/cse/search?q=%@&amp;entry=1&amp;s=1462921654728649351&amp;nsid=</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -49,6 +59,8 @@
 		<string>leduwo.com/</string>
 		<key>class</key>
 		<string>LDW</string>
+		<key>searchURL</key>
+		<string>http://zhannei.baidu.com/cse/search?q=%@&amp;click=1&amp;s=287293036948159515&amp;nsid=</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -57,6 +69,8 @@
 		<string>hunhun520.com/</string>
 		<key>class</key>
 		<string>HH</string>
+		<key>searchURL</key>
+		<string>http://www.hunhun520.com/book/%@/</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -65,6 +79,8 @@
 		<string>snwx.com/</string>
 		<key>class</key>
 		<string>SN</string>
+		<key>searchURL</key>
+		<string>http://www.snwx.com/modules/article/search.php?searchkey=%@</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -73,6 +89,8 @@
 		<string>dhzw.com/</string>
 		<key>class</key>
 		<string>DH</string>
+		<key>searchURL</key>
+		<string>http://zhannei.baidu.com/cse/search?q=%@&amp;click=1&amp;s=287293036948159515&amp;nsid=</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -81,6 +99,8 @@
 		<string>qingkan520.com/</string>
 		<key>class</key>
 		<string>QK</string>
+		<key>searchURL</key>
+		<string>http://www.qingkan520.com/book/%@/</string>
 	</dict>
 </array>
 </plist>

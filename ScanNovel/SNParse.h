@@ -30,7 +30,13 @@
 
 @end
 
-@interface SNParse_LDW : NSObject<SNParse>
+
+
+
+
+
+// http://www.hunhun520.com/book/%@/   key是其拼音直接转到搜索小说不用搜索--
+@interface SNParse_HH : NSObject<SNParse>
 
 @end
 
@@ -39,18 +45,22 @@
 @end
 
 
-@interface SNParse_HH : NSObject<SNParse>
+// http://www.snwx.com/modules/article/search.php?searchkey=%@   unicode url编码
+@interface SNParse_SN : NSObject<SNParse>
 
 @end
 
-@interface SNParse_SN : NSObject<SNParse>
+
+////////////////////////////////////////////////////////////////////////////////////////
+// 搜索不能解析。 故舍弃该网站
+@interface SNParse_LDW : NSObject<SNParse>
 
 @end
 
 @interface SNParse_DH : NSObject<SNParse>
 
 @end
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @interface SNParse : NSObject
 

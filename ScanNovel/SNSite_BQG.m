@@ -111,15 +111,11 @@
     } while (true);
     
     return [chapters subarrayWithRange:NSMakeRange(repeatedNum, chapters.count - repeatedNum)];
-    
-//    chapters = [[chapters reverseObjectEnumerator] allObjects];
-//    NSOrderedSet *set = [NSOrderedSet orderedSetWithArray:chapters];
-//    NSArray *arr = [[set.array reverseObjectEnumerator] allObjects];
-// 
-//    NSArray *addArr = [arr subarrayWithRange:NSMakeRange(chapters.count, arr.count - chapters.count)];
-//    NSMutableArray *result = [NSMutableArray arrayWithArray:chapters];
-//    [result addObjectsFromArray:addArr];
-//    chapters = [result copy];
+}
+
+- (NSArray<SNNovelModel *> *)parseSearchedNovelsWith:(GDataXMLDocument *)html
+{
+    return nil;
 }
 
 @end

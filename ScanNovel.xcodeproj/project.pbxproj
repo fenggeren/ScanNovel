@@ -36,6 +36,7 @@
 		285341461E549915005128C7 /* SNSite_SN.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853413E1E549915005128C7 /* SNSite_SN.m */; };
 		285341521E571D76005128C7 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341511E571D76005128C7 /* Test.m */; };
 		2853415B1E59DC9D005128C7 /* SNSite_BQG.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853415A1E59DC9D005128C7 /* SNSite_BQG.m */; };
+		2853415F1E5B2B09005128C7 /* SNParseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853415E1E5B2B09005128C7 /* SNParseTest.m */; };
 		690C2339CAB78C8ED83FC26F /* libPods-ScanNovel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FFD29D4AAF823771EC103 /* libPods-ScanNovel.a */; };
 		DDEF6FB9CFF04FD967FB0EFE /* libPods-Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D674ED670EDA27354B1289A7 /* libPods-Test.a */; };
 /* End PBXBuildFile section */
@@ -98,6 +99,8 @@
 		285341531E571D76005128C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		285341591E59B833005128C7 /* SNParseProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNParseProtocol.h; sourceTree = "<group>"; };
 		2853415A1E59DC9D005128C7 /* SNSite_BQG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_BQG.m; sourceTree = "<group>"; };
+		2853415D1E5B2B09005128C7 /* SNParseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNParseTest.h; sourceTree = "<group>"; };
+		2853415E1E5B2B09005128C7 /* SNParseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNParseTest.m; sourceTree = "<group>"; };
 		521BC8A5CC70CDEC685C5D8A /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
 		B584702C2D56F2E323767E08 /* Pods-ScanNovel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanNovel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScanNovel/Pods-ScanNovel.debug.xcconfig"; sourceTree = "<group>"; };
 		C3E06376CBE0ACE5738F8999 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +193,7 @@
 		2853410A1E4DE957005128C7 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				2853415C1E5B2AF1005128C7 /* Test */,
 				2853411D1E548660005128C7 /* Util */,
 				2853410E1E532E93005128C7 /* Model */,
 				285341091E4DE94F005128C7 /* Parse */,
@@ -283,6 +287,15 @@
 				285341531E571D76005128C7 /* Info.plist */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		2853415C1E5B2AF1005128C7 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				2853415D1E5B2B09005128C7 /* SNParseTest.h */,
+				2853415E1E5B2B09005128C7 /* SNParseTest.m */,
+			);
+			name = Test;
 			sourceTree = "<group>";
 		};
 		91420BC62118844F92AADBD4 /* Pods */ = {
@@ -504,6 +517,7 @@
 				285341331E5490A5005128C7 /* NSString+FGRExtension.m in Sources */,
 				285341451E549915005128C7 /* SNSite_HH.m in Sources */,
 				2853415B1E59DC9D005128C7 /* SNSite_BQG.m in Sources */,
+				2853415F1E5B2B09005128C7 /* SNParseTest.m in Sources */,
 				285341171E53317C005128C7 /* SNChapterModel.m in Sources */,
 				285341141E532ECB005128C7 /* SNNovelModel.m in Sources */,
 				285340FA1E4DE92C005128C7 /* ViewController.m in Sources */,

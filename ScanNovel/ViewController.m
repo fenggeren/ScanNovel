@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SNNetwork.h"
+#import "SNParseTest.h"
 
 @interface ViewController ()
 
@@ -17,10 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
-    [[SNNetwork sharedInstance] downloadNovelInfoWith:@"http://www.biquge.com/43_43821/" complete:^(NSError *error, SNNovelModel *model) {
-        NSLog(@"%@---%@", error, model);
-    }];
+
+    
+    [SNParseTest testBQGParse];
 }
 
 @end

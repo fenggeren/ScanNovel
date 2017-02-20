@@ -44,16 +44,9 @@
 // 下载给定小说内容
 - (void)downloadNovelInfoWith:(NSString *)URL complete:(void(^)(NSError *, SNNovelModel *))complete
 {
-    [self asyncRequestDataWith:URL completeBlock:^(NSData *data, NSError *error) {
+    [self asyncRequestDataWith:URL progress:NULL completeBlock:^(NSError *error, GDataXMLDocument *docu) {
         if (error) {
-            complete(error, nil);
-            return;
-        }
-        NSError *xmlError = NULL;
-        GDataXMLDocument *docu = [[GDataXMLDocument alloc] initWithHTMLData:data error:&xmlError];
-        if (xmlError) {
-            complete(error, nil);
-            return;
+            complete(error, nil); return;
         }
         SNNovelModel *novel = [[SNSitesManager parserWithURL:URL] parseNovelWith:docu];
         complete(nil, novel);
@@ -63,30 +56,27 @@
 // 下载给定章节内容
 - (void)downloadChapterWith:(NSString *)URL complete:(void(^)(NSError *, NSString *))complete
 {
-    [self asyncRequestDataWith:URL completeBlock:^(NSData *data, NSError *error) {
+    [self asyncRequestDataWith:URL progress:NULL completeBlock:^(NSError *error, GDataXMLDocument *docu) {
         if (error) {
-            complete(error, nil);
-            return;
-        }
-        NSError *xmlError = NULL;
-        GDataXMLDocument *docu = [[GDataXMLDocument alloc] initWithData:data error:&xmlError];
-        if (xmlError) {
-            complete(error, nil);
-            return;
+            complete(error, nil); return;
         }
         NSString *chapter = [[SNSitesManager parserWithURL:URL] parseChapterWith:docu];
         complete(nil, chapter);
     }];
 }
 
-- (void)asyncRequestDataWith:(NSString *)url completeBlock:(void(^)(NSData *data, NSError *error))block
+- (void)asyncRequestDataWith:(NSString *)url
+               progress:(void (^)(NSProgress * _Nonnull))downloadProgressBlock
+               completeBlock:(void(^)(NSError *error, GDataXMLDocument *docu))block
 {
     [_manager GET:url parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-        
+        if (downloadProgressBlock)downloadProgressBlock(downloadProgress);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        block(responseObject, nil);
+        NSError *xmlError = NULL;
+        GDataXMLDocument *docu = [[GDataXMLDocument alloc] initWithHTMLData:responseObject error:&xmlError];
+        block(xmlError, docu);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        block(nil, error);
+        block(error, nil);
         NSLog(@"%@", error);
     }];
 }
