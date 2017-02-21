@@ -83,4 +83,16 @@
     return array;
 }
 
+- (NSString *)urlGB2312Encode
+{
+    NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding (kCFStringEncodingGB_18030_2000);
+    return [self stringByAddingPercentEscapesUsingEncoding:enc];
+}
+
+- (NSString *)urlGB2312Decode
+{
+    NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding (kCFStringEncodingGB_18030_2000);
+    return [self stringByReplacingPercentEscapesUsingEncoding:enc];
+}
+
 @end

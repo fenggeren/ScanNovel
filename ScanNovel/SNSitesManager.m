@@ -14,29 +14,21 @@
 
 @implementation SNSiteModel
 {
-    NSString *_URLSite;
 }
 
 + (SNSiteModel *)siteWith:(NSDictionary *)dict
 {
-    return [self siteWith:dict[@"name"] URL:dict[@"URL"] parseClass:dict[@"class"]];
+    return [self siteWith:dict[@"name"] URL:dict[@"URL"] parseClass:dict[@"class"] searchURL:dict[@"searchURL"]];
 }
 
-+ (SNSiteModel *)siteWith:(NSString *)name URL:(NSString *)URL parseClass:(NSString *)parseClass
++ (SNSiteModel *)siteWith:(NSString *)name URL:(NSString *)URL parseClass:(NSString *)parseClass searchURL:(NSString *)searchURL
 {
     SNSiteModel *site = [[self alloc] init];
     site.name = name;
     site.URL = URL;
-    site.parseClass = [NSString stringWithFormat:@"SNParse_%@", parseClass];
+    site.parseClass = NSClassFromString([NSString stringWithFormat:@"SNParse_%@", parseClass]);
+    site.searchURL = searchURL;
     return site;
-}
-
-- (NSString *)URLSite
-{
-    if (!_URLSite) {
-        _URLSite = [_URL stringsByMatchedRegex:kSiteURLGegex].firstObject;
-    }
-    return _URLSite;
 }
 
 - (NSString *)description
@@ -66,20 +58,44 @@
     return siteModels;
 }
 
-
-
-+ (id<SNParse>)parserWithURL:(NSString *)URL
++ (SNSiteModel *)siteModelWith:(Class)cls
 {
-//    URL = [URL stringsByMatchedRegex:kSiteURLGegex].firstObject;
     for (SNSiteModel *site in [self.class sites]) {
-        if ([URL containsString:site.URL]) {
-            return [[NSClassFromString(site.parseClass) alloc] init];
+        if (site.parseClass == cls) {
+            return site;
         }
     }
     return nil;
 }
 
 
++ (id<SNParse>)parserWithURL:(NSString *)URL
+{
+    SNSiteModel *site = [self __siteModelWithURL:URL];
+    if (site) {
+        return [[site.parseClass alloc] init];
+    }
+    return nil;
+}
 
++ (NSString *)searchURLWith:(NSString *)key forSite:(NSString *)site
+{
+    SNSiteModel *sm = [self __siteModelWithURL:site];
+    if (sm) {
+        return [(id<SNSearchURLProtocol>)sm.parseClass searchURLWith:key];
+    }
+    return nil;
+}
+
+
++ (SNSiteModel *)__siteModelWithURL:(NSString *)URL
+{
+    for (SNSiteModel *site in [self.class sites]) {
+        if ([URL containsString:site.URL]) {
+            return site;
+        }
+    }
+    return nil;
+}
 
 @end

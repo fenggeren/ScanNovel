@@ -31,6 +31,17 @@
     return instance;
 }
 
+// 关键字 搜索小说结果
+- (void)searchNovelsWith:(NSString *)name complete:(void(^)(NSError *, NSArray<SNNovelModel *> *))complete
+{
+    
+}
+
+- (void)searchNovelsWith:(NSString *)key forSites:(NSString *)site complete:(void(^)(NSError *, NSArray<SNNovelModel *> *))complete
+{
+    
+}
+
 //// 获取给定小说信息
 //- (void)getNovelWith:(NSString *)URL complete:(void(^)(NSError *, SNNovelModel *))complete;
 //// 获取给定章节
@@ -78,7 +89,7 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         block(error, nil);
         NSLog(@"%@", error);
-    }];
+    }]; 
 }
 
 

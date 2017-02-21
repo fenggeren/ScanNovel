@@ -20,6 +20,11 @@
     return @"笔趣阁";
 }
 
++ (NSString *)searchURLWith:(NSString *)key
+{
+    return [NSString stringWithFormat:@"http://zhannei.baidu.com/cse/search?s=103623352827404213&q=%@&isNeedCheckDomain=1&jump=1", key];
+}
+
 /* 解析小说信息 */
 - (SNNovelModel *)parseNovelWith:(GDataXMLDocument *)html
 {

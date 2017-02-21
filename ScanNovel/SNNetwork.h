@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class SNNovelModel, SNChapterModel;
+@class SNNovelModel, SNChapterModel, GDataXMLDocument;
 
 @interface SNNetwork : NSObject
 
@@ -18,8 +18,9 @@
 - (void)getNovelWith:(NSString *)URL complete:(void(^)(NSError *, SNNovelModel *))complete;
 // 获取给定章节
 - (void)getChapterWith:(NSString *)URL complete:(void(^)(NSError *, SNChapterModel *))complete;
+
 // 关键字 搜索小说结果
-- (void)searchNovelsWith:(NSString *)name complete:(void(^)(NSError *, NSArray<SNNovelModel *> *))complete;;
+- (void)searchNovelsWith:(NSString *)name complete:(void(^)(NSError *, NSArray<SNNovelModel *> *))complete;
 
 // 下载给定小说
 - (void)downloadNovelWith:(SNNovelModel *)novel progress:(void(^)(float))progress complete:(void(^)(NSError *))complete;
@@ -28,7 +29,9 @@
 // 下载给定章节内容
 - (void)downloadChapterWith:(NSString *)URL complete:(void(^)(NSError *, NSString *))complete;
 
-
+- (void)asyncRequestDataWith:(NSString *)url
+                    progress:(void (^)(NSProgress *))downloadProgressBlock
+               completeBlock:(void(^)(NSError *error, GDataXMLDocument *docu))block;
 #pragma mark -  Test
 
 

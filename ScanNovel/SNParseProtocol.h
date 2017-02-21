@@ -26,3 +26,21 @@
 - (NSArray<SNNovelModel *> *)parseSearchedNovelsWith:(GDataXMLDocument *)html;
 
 @end
+
+
+
+@protocol SNSearchURLProtocol <NSObject>
+
+@optional
++ (NSString *)searchURLWith:(NSString *)key;
+
+@end
+
+
+@protocol SNSiteProtocol <SNParse, SNSearchURLProtocol>
+
+
+@end
+
+
+

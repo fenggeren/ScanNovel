@@ -11,6 +11,8 @@
 
 @interface SNParseTest : NSObject
 
++ (void)testURL;
+
 + (void)testBQGParse;
 
 

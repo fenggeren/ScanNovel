@@ -13,6 +13,7 @@
 #import "SNNovelModel.h"
 #import "GDataXMLNode.h"
 #import "NSString+FGRExtension.h"
+#import "SNSitesManager.h"
 
 @implementation SNParse_BQG
 
@@ -20,6 +21,15 @@
 {
     return @"笔趣阁";
 }
+
++ (NSString *)searchURLWith:(NSString *)key
+{
+//    NSString *search = [SNSitesManager siteModelWith:self.class].searchURL;
+    return [NSString stringWithFormat:@"http://zhannei.baidu.com/cse/search?q=%@&click=1&s=287293036948159515&nsid=", key];
+}
+
+
+#pragma mark - Parse
 
 /* 解析小说信息 */
 - (SNNovelModel *)parseNovelWith:(GDataXMLDocument *)html

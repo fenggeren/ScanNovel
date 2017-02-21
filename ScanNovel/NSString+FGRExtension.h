@@ -16,6 +16,8 @@
 
 - (NSString* )alaboToChinese;
 
-
 - (NSArray<NSString *> *)stringsByMatchedRegex:(NSString *)regex;
+
+@property (nonatomic, readonly) NSString *urlGB2312Encode;
+@property (nonatomic, readonly) NSString *urlGB2312Decode;
 @end

@@ -8,8 +8,18 @@
 
 #import "SNParseTest.h"
 #import "SNNetwork.h"
+#import "NSString+FGRExtension.h"
 
 @implementation SNParseTest
+
++ (void)testURL
+{
+    [[SNNetwork sharedInstance] asyncRequestDataWith:[NSString stringWithFormat:@"http://www.79xs.com/Book/Search.aspx?SearchKey=%@&SearchClass=1", [@"圣皇" urlEncode]] progress:^(NSProgress *progress) {
+        
+    } completeBlock:^(NSError *error, GDataXMLDocument *docu) {
+        
+    }];
+}
 
 + (void)testBQGParse
 {

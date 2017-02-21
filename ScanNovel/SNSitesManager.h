@@ -14,8 +14,8 @@
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *URL;
-@property (nonatomic, copy) NSString *parseClass;
-
+@property (nonatomic, assign) Class parseClass;
+@property (nonatomic, copy) NSString *searchURL;
 @end
 
 
@@ -24,6 +24,10 @@
 
 + (NSArray *)sites;
 
++ (SNSiteModel *)siteModelWith:(Class)cls;
+
 + (id<SNParse>)parserWithURL:(NSString *)URL;
+
++ (NSString *)searchURLWith:(NSString *)key forSite:(NSString *)site;
 
 @end
