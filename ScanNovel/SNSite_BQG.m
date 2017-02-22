@@ -22,7 +22,7 @@
     return @"笔趣阁";
 }
 
-+ (NSString *)searchURLWith:(NSString *)key
++ (NSString *)fuzzySearchedURLWith:(NSString *)key
 {
 //    NSString *search = [SNSitesManager siteModelWith:self.class].searchURL;
     return [NSString stringWithFormat:@"http://zhannei.baidu.com/cse/search?q=%@&click=1&s=287293036948159515&nsid=", key];
@@ -107,6 +107,27 @@
     novel.chapters = [self removeRepeatedFor:chapters];
 }
 
+
+- (NSArray<SNNovelModel *> *)parseSearchedNovelsWith:(GDataXMLDocument *)doc
+{
+    NSArray *eles = [doc nodesForXPath:@"//div[@id='results']//div[@class='result-item result-game-item']" error:NULL];
+    for (GDataXMLElement *ele in eles) {
+        NSString *imgURL = [[ele firstNodeForXPath:@"div[1]/div[1]/img/@src" error:NULL] stringValue];
+        [self parseSearchInfo:(GDataXMLElement *)[ele firstNodeForXPath:@"div[@class='result-game-item-detail']" error:NULL]];
+    }
+    
+    return nil;
+}
+
+
+//*[@id="results"]/div[2]/div[1]/div[2]
+- (void)parseSearchInfo:(GDataXMLElement *)ele
+{
+    
+}
+
+#pragma mark - Helper
+
 //  [10,9,8,7,0,1,2,3,4,5,6,7,8,9,10]  笔趣阁小说目录获取数组
 // 默认会重复最后的9章
 - (NSArray *)removeRepeatedFor:(NSMutableArray<SNChapterModel *> *)chapters
@@ -121,11 +142,6 @@
     } while (true);
     
     return [chapters subarrayWithRange:NSMakeRange(repeatedNum, chapters.count - repeatedNum)];
-}
-
-- (NSArray<SNNovelModel *> *)parseSearchedNovelsWith:(GDataXMLDocument *)html
-{
-    return nil;
 }
 
 @end

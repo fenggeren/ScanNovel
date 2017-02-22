@@ -54,16 +54,6 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>乐读窝</string>
-		<key>URL</key>
-		<string>leduwo.com/</string>
-		<key>class</key>
-		<string>LDW</string>
-		<key>searchURL</key>
-		<string>http://zhannei.baidu.com/cse/search?q=%@&amp;click=1&amp;s=287293036948159515&amp;nsid=</string>
-	</dict>
-	<dict>
-		<key>name</key>
 		<string>混混</string>
 		<key>URL</key>
 		<string>hunhun520.com/</string>
@@ -81,16 +71,6 @@
 		<string>SN</string>
 		<key>searchURL</key>
 		<string>http://www.snwx.com/modules/article/search.php?searchkey=%@</string>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>大海中文</string>
-		<key>URL</key>
-		<string>dhzw.com/</string>
-		<key>class</key>
-		<string>DH</string>
-		<key>searchURL</key>
-		<string>http://zhannei.baidu.com/cse/search?q=%@&amp;click=1&amp;s=287293036948159515&amp;nsid=</string>
 	</dict>
 	<dict>
 		<key>name</key>

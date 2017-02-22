@@ -30,6 +30,14 @@
     [super tearDown];
 }
 
+
+- (void)testStringExtension
+{
+    NSString *str = @"我的新中国";
+    NSLog(@"%@", str.pinyin);
+    NSString *py = str.pinyin;
+}
+
 - (void)testRegexString
 {
     NSString *str = @"http://www.biquge.com/笔趣阁";

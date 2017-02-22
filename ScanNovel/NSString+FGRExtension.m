@@ -95,4 +95,17 @@
     return [self stringByReplacingPercentEscapesUsingEncoding:enc];
 }
 
+- (NSString *)pinyin
+{
+    NSMutableString *pinyin = [self mutableCopy];
+    CFStringTransform((__bridge CFMutableStringRef)pinyin, NULL, kCFStringTransformMandarinLatin, NO);
+    CFStringTransform((__bridge CFMutableStringRef)pinyin, NULL, kCFStringTransformStripCombiningMarks, NO);
+    return [pinyin uppercaseString];
+}
+
+- (NSString *)continuePinyin
+{
+    return [self.pinyin stringByReplacingOccurrencesOfString:@" " withString:@""];
+}
+
 @end

@@ -11,6 +11,8 @@
 
 @interface SNParseTest : NSObject
 
++ (void)testParseSearch;
+
 + (void)testURL;
 
 + (void)testBQGParse;

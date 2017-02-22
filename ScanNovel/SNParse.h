@@ -10,53 +10,44 @@
 #import "SNParseProtocol.h"
 
 
-@interface SNParse_BQG : NSObject<SNSiteProtocol>
+@interface SNParse_BQG : NSObject<SNParse, SNFuzzySearchedURLProtocol>
 
 @end
 
-@interface SNParse_520 : NSObject<SNSiteProtocol>
+@interface SNParse_520 : NSObject<SNParse, SNFuzzySearchedURLProtocol>
 
 @end
 
-@interface SNParse_SHH : NSObject<SNSiteProtocol>
+@interface SNParse_SHH : NSObject<SNParse, SNFuzzySearchedURLProtocol>
 
 @end
 
-@interface SNParse_LW : NSObject<SNSiteProtocol>
+@interface SNParse_LW : NSObject<SNParse, SNFuzzySearchedURLProtocol>
 
 @end
 
-@interface SNParse_MP : NSObject<SNSiteProtocol>
+@interface SNParse_MP : NSObject<SNParse, SNFuzzySearchedURLProtocol>
+
+@end
+
+// http://www.snwx.com/modules/article/search.php?searchkey=%@   unicode url编码
+@interface SNParse_SN : NSObject<SNParse, SNFuzzySearchedURLProtocol>
 
 @end
 
 
 // http://www.hunhun520.com/book/%@/   key是其拼音直接转到搜索小说不用搜索--
-@interface SNParse_HH : NSObject<SNSiteProtocol>
+@interface SNParse_HH : NSObject<SNParse, SNAdvancedSearchedURLProtocol>
 
 @end
 
-@interface SNParse_QK : NSObject<SNSiteProtocol>
-
-@end
-
-
-// http://www.snwx.com/modules/article/search.php?searchkey=%@   unicode url编码
-@interface SNParse_SN : NSObject<SNSiteProtocol>
+@interface SNParse_QK : NSObject<SNParse, SNAdvancedSearchedURLProtocol>
 
 @end
 
 
-////////////////////////////////////////////////////////////////////////////////////////
-// 搜索不能解析。 故舍弃该网站
-@interface SNParse_LDW : NSObject<SNSiteProtocol>
 
-@end
 
-@interface SNParse_DH : NSObject<SNSiteProtocol>
-
-@end
-////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @interface SNParse : NSObject
 

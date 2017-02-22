@@ -20,6 +20,11 @@
     return @"笔趣阁";
 }
 
++ (NSString *)fuzzySearchedURLWith:(NSString *)key
+{
+    return [NSString stringWithFormat:@"http://www.snwx.com/modules/article/search.php?searchkey=%@", key.urlGB2312Encode];
+}
+
 /* 解析小说信息 */
 - (SNNovelModel *)parseNovelWith:(GDataXMLDocument *)html
 {

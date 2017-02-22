@@ -20,9 +20,9 @@
     [super viewDidLoad];
 
     
-    [SNParseTest testURL];
+    [SNParseTest testParseSearch];
     
-    [(id<SNSearchURLProtocol>)NSClassFromString(@"SNParse_BQG") searchURLWith:@"哈"];
+    
     
     
 

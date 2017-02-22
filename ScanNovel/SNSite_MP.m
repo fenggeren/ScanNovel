@@ -20,7 +20,7 @@
     return @"笔趣阁";
 }
 
-+ (NSString *)searchURLWith:(NSString *)key
++ (NSString *)fuzzySearchedURLWith:(NSString *)key
 {
     return [NSString stringWithFormat:@"http://zhannei.baidu.com/cse/search?q=%@&entry=1&s=1462921654728649351&nsid=", key];
 }

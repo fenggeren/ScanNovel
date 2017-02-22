@@ -20,4 +20,8 @@
 
 @property (nonatomic, readonly) NSString *urlGB2312Encode;
 @property (nonatomic, readonly) NSString *urlGB2312Decode;
+
+@property (nonatomic, readonly) NSString *pinyin;
+
+@property (nonatomic, readonly) NSString *continuePinyin;
 @end

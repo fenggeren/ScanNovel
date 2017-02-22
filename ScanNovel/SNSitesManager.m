@@ -78,14 +78,7 @@
     return nil;
 }
 
-+ (NSString *)searchURLWith:(NSString *)key forSite:(NSString *)site
-{
-    SNSiteModel *sm = [self __siteModelWithURL:site];
-    if (sm) {
-        return [(id<SNSearchURLProtocol>)sm.parseClass searchURLWith:key];
-    }
-    return nil;
-}
+
 
 
 + (SNSiteModel *)__siteModelWithURL:(NSString *)URL

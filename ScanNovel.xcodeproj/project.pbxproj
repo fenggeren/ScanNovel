@@ -21,7 +21,6 @@
 		2853411C1E548659005128C7 /* SNSitesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853411B1E548659005128C7 /* SNSitesManager.m */; };
 		285341201E5489F6005128C7 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2853411F1E5489F6005128C7 /* libxml2.2.tbd */; };
 		285341251E548A12005128C7 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341241E548A12005128C7 /* GDataXMLNode.m */; };
-		285341281E548CEC005128C7 /* SNSite_DH.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341271E548CEC005128C7 /* SNSite_DH.m */; };
 		285341321E5490A5005128C7 /* NSTimer+FGRBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853412B1E5490A5005128C7 /* NSTimer+FGRBlock.m */; };
 		285341331E5490A5005128C7 /* NSString+FGRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853412D1E5490A5005128C7 /* NSString+FGRExtension.m */; };
 		285341341E5490A5005128C7 /* UIImage+FGRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853412F1E5490A5005128C7 /* UIImage+FGRExtension.m */; };
@@ -30,13 +29,13 @@
 		285341401E549915005128C7 /* SNSite_SHH.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341381E549915005128C7 /* SNSite_SHH.m */; };
 		285341411E549915005128C7 /* SNSite_LW.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341391E549915005128C7 /* SNSite_LW.m */; };
 		285341421E549915005128C7 /* SNSite_MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853413A1E549915005128C7 /* SNSite_MP.m */; };
-		285341431E549915005128C7 /* SNSite_LDW.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853413B1E549915005128C7 /* SNSite_LDW.m */; };
 		285341441E549915005128C7 /* SNSite_QK.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853413C1E549915005128C7 /* SNSite_QK.m */; };
 		285341451E549915005128C7 /* SNSite_HH.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853413D1E549915005128C7 /* SNSite_HH.m */; };
 		285341461E549915005128C7 /* SNSite_SN.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853413E1E549915005128C7 /* SNSite_SN.m */; };
 		285341521E571D76005128C7 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341511E571D76005128C7 /* Test.m */; };
 		2853415B1E59DC9D005128C7 /* SNSite_BQG.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853415A1E59DC9D005128C7 /* SNSite_BQG.m */; };
 		2853415F1E5B2B09005128C7 /* SNParseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853415E1E5B2B09005128C7 /* SNParseTest.m */; };
+		285341641E5DC4F8005128C7 /* SNSearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 285341631E5DC4F8005128C7 /* SNSearchManager.m */; };
 		690C2339CAB78C8ED83FC26F /* libPods-ScanNovel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FFD29D4AAF823771EC103 /* libPods-ScanNovel.a */; };
 		DDEF6FB9CFF04FD967FB0EFE /* libPods-Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D674ED670EDA27354B1289A7 /* libPods-Test.a */; };
 /* End PBXBuildFile section */
@@ -77,7 +76,6 @@
 		2853411F1E5489F6005128C7 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		285341231E548A12005128C7 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
 		285341241E548A12005128C7 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
-		285341271E548CEC005128C7 /* SNSite_DH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_DH.m; sourceTree = "<group>"; };
 		2853412A1E5490A5005128C7 /* NSTimer+FGRBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+FGRBlock.h"; sourceTree = "<group>"; };
 		2853412B1E5490A5005128C7 /* NSTimer+FGRBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+FGRBlock.m"; sourceTree = "<group>"; };
 		2853412C1E5490A5005128C7 /* NSString+FGRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FGRExtension.h"; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 		285341381E549915005128C7 /* SNSite_SHH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_SHH.m; sourceTree = "<group>"; };
 		285341391E549915005128C7 /* SNSite_LW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_LW.m; sourceTree = "<group>"; };
 		2853413A1E549915005128C7 /* SNSite_MP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_MP.m; sourceTree = "<group>"; };
-		2853413B1E549915005128C7 /* SNSite_LDW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_LDW.m; sourceTree = "<group>"; };
 		2853413C1E549915005128C7 /* SNSite_QK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_QK.m; sourceTree = "<group>"; };
 		2853413D1E549915005128C7 /* SNSite_HH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_HH.m; sourceTree = "<group>"; };
 		2853413E1E549915005128C7 /* SNSite_SN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_SN.m; sourceTree = "<group>"; };
@@ -101,6 +98,8 @@
 		2853415A1E59DC9D005128C7 /* SNSite_BQG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSite_BQG.m; sourceTree = "<group>"; };
 		2853415D1E5B2B09005128C7 /* SNParseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNParseTest.h; sourceTree = "<group>"; };
 		2853415E1E5B2B09005128C7 /* SNParseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNParseTest.m; sourceTree = "<group>"; };
+		285341621E5DC4F8005128C7 /* SNSearchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSearchManager.h; sourceTree = "<group>"; };
+		285341631E5DC4F8005128C7 /* SNSearchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSearchManager.m; sourceTree = "<group>"; };
 		521BC8A5CC70CDEC685C5D8A /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
 		B584702C2D56F2E323767E08 /* Pods-ScanNovel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanNovel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScanNovel/Pods-ScanNovel.debug.xcconfig"; sourceTree = "<group>"; };
 		C3E06376CBE0ACE5738F8999 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,13 +177,12 @@
 		285341091E4DE94F005128C7 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
+				285341591E59B833005128C7 /* SNParseProtocol.h */,
 				285341261E548CC2005128C7 /* crowed */,
 				2853411A1E548659005128C7 /* SNSitesManager.h */,
 				2853411B1E548659005128C7 /* SNSitesManager.m */,
 				2853410B1E4DE96E005128C7 /* SNParse.h */,
 				2853410C1E4DE96E005128C7 /* SNParse.m */,
-				2853410F1E532EAA005128C7 /* SNNetwork.h */,
-				285341101E532EAA005128C7 /* SNNetwork.m */,
 				285341181E548297005128C7 /* Sites.plist */,
 			);
 			name = Parse;
@@ -193,10 +191,10 @@
 		2853410A1E4DE957005128C7 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				285341601E5DC4C3005128C7 /* Data */,
 				2853415C1E5B2AF1005128C7 /* Test */,
 				2853411D1E548660005128C7 /* Util */,
 				2853410E1E532E93005128C7 /* Model */,
-				285341091E4DE94F005128C7 /* Parse */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -250,17 +248,14 @@
 		285341261E548CC2005128C7 /* crowed */ = {
 			isa = PBXGroup;
 			children = (
-				285341591E59B833005128C7 /* SNParseProtocol.h */,
 				2853415A1E59DC9D005128C7 /* SNSite_BQG.m */,
 				285341381E549915005128C7 /* SNSite_SHH.m */,
 				285341371E549915005128C7 /* SNSite_520.m */,
 				285341391E549915005128C7 /* SNSite_LW.m */,
 				2853413A1E549915005128C7 /* SNSite_MP.m */,
-				2853413B1E549915005128C7 /* SNSite_LDW.m */,
 				2853413C1E549915005128C7 /* SNSite_QK.m */,
 				2853413D1E549915005128C7 /* SNSite_HH.m */,
 				2853413E1E549915005128C7 /* SNSite_SN.m */,
-				285341271E548CEC005128C7 /* SNSite_DH.m */,
 			);
 			name = crowed;
 			sourceTree = "<group>";
@@ -296,6 +291,18 @@
 				2853415E1E5B2B09005128C7 /* SNParseTest.m */,
 			);
 			name = Test;
+			sourceTree = "<group>";
+		};
+		285341601E5DC4C3005128C7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				285341621E5DC4F8005128C7 /* SNSearchManager.h */,
+				285341631E5DC4F8005128C7 /* SNSearchManager.m */,
+				2853410F1E532EAA005128C7 /* SNNetwork.h */,
+				285341101E532EAA005128C7 /* SNNetwork.m */,
+				285341091E4DE94F005128C7 /* Parse */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		91420BC62118844F92AADBD4 /* Pods */ = {
@@ -515,6 +522,7 @@
 			files = (
 				2853410D1E4DE96E005128C7 /* SNParse.m in Sources */,
 				285341331E5490A5005128C7 /* NSString+FGRExtension.m in Sources */,
+				285341641E5DC4F8005128C7 /* SNSearchManager.m in Sources */,
 				285341451E549915005128C7 /* SNSite_HH.m in Sources */,
 				2853415B1E59DC9D005128C7 /* SNSite_BQG.m in Sources */,
 				2853415F1E5B2B09005128C7 /* SNParseTest.m in Sources */,
@@ -530,11 +538,9 @@
 				285340F41E4DE92C005128C7 /* main.m in Sources */,
 				285341421E549915005128C7 /* SNSite_MP.m in Sources */,
 				285341341E5490A5005128C7 /* UIImage+FGRExtension.m in Sources */,
-				285341431E549915005128C7 /* SNSite_LDW.m in Sources */,
 				285341401E549915005128C7 /* SNSite_SHH.m in Sources */,
 				285341441E549915005128C7 /* SNSite_QK.m in Sources */,
 				285341111E532EAA005128C7 /* SNNetwork.m in Sources */,
-				285341281E548CEC005128C7 /* SNSite_DH.m in Sources */,
 				2853411C1E548659005128C7 /* SNSitesManager.m in Sources */,
 				285341351E5490A5005128C7 /* UIColor+FGRExtension.m in Sources */,
 			);

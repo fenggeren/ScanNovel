@@ -20,6 +20,11 @@
     return @"笔趣阁";
 }
 
++ (NSString *)advancedSearchedURLWith:(NSString *)key
+{
+    return [NSString stringWithFormat:@"http://www.qingkan520.com/book/%@/", key.pinyin];
+}
+
 /* 解析小说信息 */
 - (SNNovelModel *)parseNovelWith:(GDataXMLDocument *)html
 {

@@ -28,17 +28,18 @@
 @end
 
 
+// 模糊搜索协议, 返回包含指定key的 所有小说名称结果的 URL
+@protocol SNFuzzySearchedURLProtocol <NSObject>
 
-@protocol SNSearchURLProtocol <NSObject>
-
-@optional
-+ (NSString *)searchURLWith:(NSString *)key;
++ (NSString *)fuzzySearchedURLWith:(NSString *)key;
 
 @end
 
 
-@protocol SNSiteProtocol <SNParse, SNSearchURLProtocol>
+// 精准搜索结果 返回指定小说的 URL 可能为nil
+@protocol SNAdvancedSearchedURLProtocol <NSObject>
 
++ (NSString *)advancedSearchedURLWith:(NSString *)key;
 
 @end
 
